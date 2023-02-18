@@ -1,0 +1,94 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+a {
+    text-decoration: none;
+}
+.main-container {
+    margin: 2em;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.534), 0 0 0 1px rgb(10 10 10 / 2%);
+    background-color: #272727;
+}
+.main-container>p {
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#00ffbf, #00aeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+    padding-top: 1em;
+}
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1em;
+    border-top: 1px solid #bebebe;
+}
+.left-panel-choose-song {
+    grid-column: 1/6;
+    display: grid;
+    grid-template-columns: 1;
+}
+.song-left-info {
+    display: flex;
+    padding: 0.5em;
+    height: 4em;
+}
+.song-left-info>img {
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1em;
+}
+.song-left-info p {
+    font-size: 1.3em;
+  background: -webkit-linear-gradient(#00ffbf, #00aeff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.name-song {
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+}
+.song-info {
+    grid-column: 6/13;
+    margin-left: 1em;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.534), 0 0 0 1px rgb(10 10 10 / 2%);
+    height: 100%;  
+}
+iframe {
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.song-left-info:hover {
+    background: linear-gradient(90deg, #363636, #4c726c73);
+    border-radius: 0.5em;
+    border: 1px solid #1a1a1a46;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.39), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+@media (max-width: 769px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .song-left-info {
+        width: 100%;
+    }
+    .song-info {
+        height: 35em;
+        margin-left: 0;
+    }
+    iframe {
+        height: 100%;
+    }
+    audio {
+        width: 100;
+    }
+}

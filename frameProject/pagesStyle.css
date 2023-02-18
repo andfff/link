@@ -1,0 +1,44 @@
+body {
+    background-color: #333333;
+}
+.all-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.all-info>img {
+    width: 70%;
+    height: auto;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.534), 0 0 0 1px rgb(10 10 10 / 2%);
+}
+
+.all-info>p {
+    font-size: 2.5em;
+    background: -webkit-linear-gradient(#00ffbf, #00aeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-align: center;
+    height: 100%;
+}
+.info-into {
+    background: -webkit-linear-gradient(#00ffbf, #00aeff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    height: 100%;
+    width: 70%;
+    border-top: 1px solid aliceblue;
+}
+.audio-panel {
+    width: 70%;
+}
+audio::-webkit-media-controls-panel {
+	background: linear-gradient(#00ffbf, #00aeff);
+}
+@media (max-width: 769px) {
+    audio {
+        width: 100%;
+    }
+}
