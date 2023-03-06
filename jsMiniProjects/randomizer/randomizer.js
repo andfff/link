@@ -2,7 +2,7 @@ const circle = document.querySelector('.random-place')
 const link = document.querySelector('.link')
 const mesange = document.querySelector('.mesange')
 
-setInterval(coordinate, 2000)
+setInterval(coordinate, 1000)
 
 function coordinate() {
     const randomRotate = Math.floor(Math.random() * 300)
