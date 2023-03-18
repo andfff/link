@@ -1,0 +1,221 @@
+html {
+    width: 100%;
+    height: 100%;
+    background: var(--backColor);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 80%;
+    height: 75%;
+    padding-bottom: 4%;
+    display: grid;
+    grid-template-rows: 2fr 3fr 4fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 17px;
+    border: var(--border);
+    box-shadow: var(--shadow);
+    word-break: break-all;
+    position: relative;
+}
+
+.head-text {
+    font-size: 5vw;
+    color: var(--fontColor);
+    text-shadow: var(--texShadow);
+    font-weight: 800;
+    margin: 0.5em;
+    text-align: center;
+    animation: 3s linear 0s infinite alternate forwards head-text-anima;
+}
+
+@keyframes head-text-anima {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.01, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+button {
+    background: transparent;
+    border: var(--border);
+    color: var(--fontColor);
+    text-shadow: #879100 2.5px 1px 2px;
+    font-weight: 800;
+    transition: 200ms;
+    border-radius: 5px;
+}
+
+button:hover {
+    transform: scale(1.15, 1.15);
+    color: var(--hoverColor);
+}
+
+button:active {
+    opacity: 0;
+    transform: scale(1.1, 1.1);
+    transform: rotate(1deg);
+    color: var(--activeColor);
+    text-shadow: var(--activeTextShadow);
+    border: 3px solid #b57ca7;
+}
+
+.input-container {
+    box-sizing: border-box;
+}
+
+input {
+    box-sizing: border-box;
+    font-size: 2.7vw;
+    background: transparent;
+    margin-left: 1px;
+    border: var(--border);
+    color: var(--fontColor);
+    font-weight: 800;
+    transition: 300ms linear 100ms;
+    transform: perspective(95px) rotateY(3deg) ; 
+    outline: none;
+    border-radius: 5px;
+}
+
+input:hover {
+    transform: perspective(700px) rotateY(1deg);
+}
+
+input:focus {
+    animation-play-state: paused;
+    transform: scale(1, 1) rotateY(0deg);
+    border: 3px solid #b57ca7;
+}
+
+.btn-input {
+    box-sizing: border-box;
+    font-size: 2.7vw;
+    background: transparent;
+    border: var(--border);
+    color: var(--fontColor);
+    text-shadow: #879100 2.5px 1.5px 2px;
+    font-weight: 800;
+}
+
+.list {
+    box-sizing: border-box;
+    border: var(--border);
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding: 1%;
+    margin-bottom: 7%;
+    color: var(--fontColor);
+    text-shadow: #879100 2.5px 1px 2px;
+    font-weight: 800;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.row-text {
+    margin: 0;
+    font-family: serif;
+    color: #795794;
+}
+
+.button-container {
+    white-space: nowrap;
+    margin-left: 5px;
+    font-family: serif;
+}
+
+.btn-clear {
+    background: transparent;
+    border: none;
+    font-size: 3vw;
+    color: var(--fontColor);
+    text-shadow: var(--texShadow);
+    font-weight: 800;
+    transition: 200ms;
+    bottom: 11%;
+}
+
+.btn-clear:hover {
+    color: var(--hoverColor);
+}
+
+.btn-clear:active {
+    color: var(--activeColor);
+    text-shadow: var(--activeTextShadow);
+    transform: rotate(1.5deg);
+}
+
+@media (max-width: 600px) {
+    .input-container {
+        text-align: end;
+        white-space: pre-wrap;
+    }
+
+    input {
+        font-size: 4.2vw;
+    }
+
+    .btn-input {
+        font-size: 4.2vw;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .head-text {
+        font-size: 8vw;
+    }
+
+    .btn-clear {
+        font-size: 6vw;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #aa8ac28c;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #8F60B5, #b596ce);
+    border: 2px solid #aa8ac2b9;
+    width: 15px;
+    border-radius: 5px;
+}

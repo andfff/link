@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Iso);
+
+*{
+    font-family: var(--font);
+    user-select: none;
+}
+body{
+    background: var(--backColor);
+}
+:root {
+    --shadow: 3px 4px 10px 1px #05050549;
+    --backColor: linear-gradient(135deg, #60B565, #85B560, #B0B560);
+    --fontColor: #8F60B5;
+    --texShadow: #879100 5px 2px 2px;
+    --border: 2px solid #746371b0;
+    --hoverColor: #9C7CB5;
+    --activeTextShadow: #915200 5px 2px 2px;
+    --activeColor: #B0B560;
+    --font: 'Rubik Iso', serif;
+}
