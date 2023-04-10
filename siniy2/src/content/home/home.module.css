@@ -1,0 +1,108 @@
+:root {
+    --shadow: 0 0.4em 1em -0.125em rgb(10 10 10 / 60%), 0 0 0 1px rgb(10 10 10 / 24%)
+}
+*{
+    user-select: none;
+}
+
+.container {
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.header{
+    color: #803fafb7;
+    background: linear-gradient(90deg, #4d2f602e, #2421289d, #484448bf, #130c12b6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: contrast(1.5);
+
+    text-align: center;
+    font-size: 180%;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+.img_description {
+    display: flex;
+    box-sizing: border-box;
+    
+}
+
+.avatar {
+    filter: brightness(90%);
+
+    width: 30%;
+    margin-bottom: auto;
+    border-radius: 10%;
+    border: 1px solid #00000054;
+    box-shadow:  0 0.4em 1em -0.125em rgb(10 10 10 / 60%), 0 0 0 1px rgb(10 10 10 / 24%);
+    margin-top: auto;
+}
+
+.description {
+    color: #d8b6fa;
+    box-shadow:0 0.4em 1em -0.125em rgba(10, 10, 10, 0.711), 0 0 0 1px rgba(10, 10, 10, 0.188);
+    background: linear-gradient(135deg, #0000006c, #22355783);
+    border-radius: 5px;
+
+    padding: 4%;
+    margin-inline: 4%;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.links {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 8%;
+}
+
+.link {
+    color: #330f4e;
+
+    box-shadow:0 0.4em 1em -0.125em rgba(10, 10, 10, 0.289), 0 0 0 1px rgba(10, 10, 10, 0.07);
+    padding: 1.5% 4% 1.5% 4%;
+    margin-top: 4%;
+    text-decoration: none;
+    font-size: 135%;
+    font-weight: 500;
+    transition: 300ms;
+}
+.link:hover{
+    background: linear-gradient(90deg, #2917349d, #412460, #715871bf, #480d3fdc);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(1deg);
+    filter: drop-shadow(1px 1px #000);
+}
+
+.bio_head{
+    color: #803fafb7;
+    background: linear-gradient(90deg, #09060ba2, #18161acd, #484448bf, #130c12a0);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: contrast(1.5);
+
+    -webkit-text-stroke: 0.3px;
+    margin-left: 4%;
+    font-size: 180%;
+    font-weight: 540;
+    margin-bottom: 4%;
+}
+
+.bio_text {
+    color: #d8b6fa;
+    box-shadow:0 0.4em 1em -0.125em rgba(10, 10, 10, 0.711), 0 0 0 1px rgba(10, 10, 10, 0.188);
+    background: linear-gradient(135deg, #0000006c, #22355783);
+    border-radius: 5px;
+
+    padding: 4%;
+    
+    font-size: 110%;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
